@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "market-sensing-449014",
+  "private_key_id": "a6c257ded1306575af485ca4868dff5d0153358f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC4MtK2++9E1dNC\nGIPXa9cXTQ5YS8s7Nd/IjY3zI9+3nfgMIS5IuOGcf++HvmRKlD2v+s+YXq7Ob1pR\n/0ZNhVk3yxvm7jjlsnDpfDVd65eZdMgfmhOj4nbnpN+OvG3AyRIt0PZcuHyuKYE5\nQzNdeHy4rrdVOnXbPQES6SQfmgFrmzwJai6oOUVR/J6HOAACQQwBnor2l1aqzVgt\nJciYPGj9QUJdh9KgLHnEoEoq+J+T8yeogV0vnkCZa7KGczOqpD5D0k4LkkRfyNI4\nR0kmK1f3Uw81/93so3BXG4xRM3ejl6IuvQPUYRg4B7yALY3mDQ6whNd/2KFk4Q5u\noXOjqf2nAgMBAAECggEAHDftAAtohGsdiiqnSAFFWlR7thsmb1O5jMfizzTXuRGC\nRplutcVdCtSupWUNiD9dk/AgjX8z2HxGofkxk/6xxFJhW+dy3/2OPrbAljrZZrD1\nV6ILEDhJbwNbHErRpY8oMcypcVrx/txs55Db9Z3XvZNGks/57jRSTctZtV2qiglj\nfc7ziLD2yHZM+moDqoHRmWwCOCzWB2uxyWBt0RA9opyu2ws+85cabrEcly2Aax/Y\n7UsYcOV9FxdGkAnrKbtCcDBkXEBIzCJJ9LqCXRCOAwaXgACNrgsbuLL3l1/5p0A7\ncCUukwhxSfDcwVQf/BSMRRe3Pqz6WF3EhbOI/ZhzAQKBgQDg7T4eFhYXxpmnntKt\nQmyND8HWskQ8D5RrdxWzAl4/ilWbMjPi47iaYK1cPstuY1EJRb/Q/8VD2cABa8QC\n+e1oSpAKaztI7i+2MMtmLD8h0jiSzqpCso0M/3vfSH/BXtZdDbkFV4WIG+iCGfo4\nQqhq4Q5iSNDON30tLepAT7BFFwKBgQDRpS/n/LTV/7ta132lc5qp5xypjZQ4e8PO\nmKH0GA8muXCc+h03xa53ai6c7vqdSRrGIjHL7qAgiHvQvT9TRkZVlGsmIlz5Flao\nzaSAqrPVXX1alAFrh8kIeOgVNcsk2QDYMR1SHZ9HBdU3FGFmxIbmeKr5pEIjaSeU\nd2HDuEyF8QKBgBR0ftmtmITBAuhDgVVQXR7W+AHWZG4x3IWJZufIp1mP8wkSH7Xa\nj8c6U4m4DDgVwCDfvvn6yK3K97MpYcIDiJubbE4GQnX3c09WUKkSDQu+Wna/ZKx8\nIGe2NEWyCixDu6rqvJDHzNT79MEgK6lCJp7RqMU3agXW9gNN0afXl2gxAoGAFRmP\nDMY+XRtz+9ycZL6R3m/ITrhVJqouNujdw/d37unTD7mMn0RiHtqs/lZ/Gr102GQw\nptnJe/zAmW2yper4wTxC3H+w49D/v9WSrPCBUQQrzaX/zpbIAPZKRXg4jejZUOkA\njnc0xK0tnHGMrA8zlJaofp+tmGrI9QRe7pfp+8ECgYBatvAq5O/EZHFPZ12z2b4z\n5EiGcZTETMB8XNdPTLa4zQjJPpjqfLEVvytFFC/W+Jawk7uG1R6wBDGNN/z8CFOj\n0yEHThfX8Fkc4lUJOdeBaiclHeNintmvmEMU9c5l+thXtc/vM4WJTSkhtO7qbYtN\nZ+L5gcjtlBVjgToZHWFp8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-sheets@market-sensing-449014.iam.gserviceaccount.com",
+  "client_id": "102522601048005357784",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-sheets%40market-sensing-449014.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -13,7 +13,7 @@ config = {'displayModeBar': False}
 @st.cache_data
 def get_and_prepare_data():
     # Connect to GS
-    GSHEETS_CREDENTIALS = 'market-sensing-449014-056e2e3d0207.json'
+    GSHEETS_CREDENTIALS = 'market-sensing-449014-a6c257ded130.json'
     client = gspread.service_account(GSHEETS_CREDENTIALS)
     sheet = client.open('Dashboard_Marketsensing')
     
