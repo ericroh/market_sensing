@@ -1,6 +1,6 @@
-streamlit==1.35.0
-pandas==2.2.2
-numpy==1.26.4
-gspread==5.10.0
-plotly==5.18.0
-matplotlib==3.8.2
+streamlit==1.41.1
+pandas==2.2.3
+numpy==2.2.2
+gspread==6.1.4
+plotly==6.0.0
+matplotlib==3.10.0
