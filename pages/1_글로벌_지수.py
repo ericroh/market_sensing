@@ -11,16 +11,16 @@ config = {'displayModeBar': False}
 #st.title(f"글로벌 주요 지수", anchor=False)
 
 GSHEETS_CREDENTIALS = {
-    "type": str(st.secrets["connections.gsheets"]["type"]),
-    "project_id": str(st.secrets["connections.gsheets"]["project_id"]),
-    "private_key_id": str(st.secrets["connections.gsheets"]["private_key_id"]),
-    "private_key": str(st.secrets["connections.gsheets"]["private_key"]),
-    "client_email": str(st.secrets["connections.gsheets"]["client_email"]),
-    "client_id": str(st.secrets["connections.gsheets"]["client_id"]),
-    "auth_uri": str(st.secrets["connections.gsheets"]["auth_uri"]),
-    "token_uri": str(st.secrets["connections.gsheets"]["token_uri"]),
-    "auth_provider_x509_cert_url": str(st.secrets["connections.gsheets"]["auth_provider_x509_cert_url"]),
-    "client_x509_cert_url": str(st.secrets["connections.gsheets"]["client_x509_cert_url"]),
+    "type": str(st.secrets["type"]),
+    "project_id": str(st.secrets["project_id"]),
+    "private_key_id": str(st.secrets["private_key_id"]),
+    "private_key": str(st.secrets["private_key"]),
+    "client_email": str(st.secrets["client_email"]),
+    "client_id": str(st.secrets["client_id"]),
+    "auth_uri": str(st.secrets["auth_uri"]),
+    "token_uri": str(st.secrets["token_uri"]),
+    "auth_provider_x509_cert_url": str(st.secrets["auth_provider_x509_cert_url"]),
+    "client_x509_cert_url": str(st.secrets["client_x509_cert_url"]),
 }
 
 

@@ -7,23 +7,34 @@ from utils.utils import *
 import plotly.express as pe
 import plotly.graph_objects as go
 
+GSHEETS_CREDENTIALS = {
+    "type": str(st.secrets["type"]),
+    "project_id": str(st.secrets["project_id"]),
+    "private_key_id": str(st.secrets["private_key_id"]),
+    "private_key": str(st.secrets["private_key"]),
+    "client_email": str(st.secrets["client_email"]),
+    "client_id": str(st.secrets["client_id"]),
+    "auth_uri": str(st.secrets["auth_uri"]),
+    "token_uri": str(st.secrets["token_uri"]),
+    "auth_provider_x509_cert_url": str(st.secrets["auth_provider_x509_cert_url"]),
+    "client_x509_cert_url": str(st.secrets["client_x509_cert_url"]),
+}
+
+
 @st.cache_data
 def get_and_prepare_data():
     # Connect to GS
-    GSHEETS_CREDENTIALS = 'market-sensing-449014-a6c257ded130.json'
-    client = gspread.service_account(GSHEETS_CREDENTIALS)
+    client = gspread.service_account_from_dict(GSHEETS_CREDENTIALS)
     sheet = client.open('Dashboard_Marketsensing')
     
     worksheet_list = sheet.worksheets()
-    pg = sheet.worksheet("Bloomberg")
-    df_pg = pd.DataFrame(pg.get_all_records())
-    df_pg = ensure_datetime(df_pg, 'Date')
-    df_pg.set_index('Date', inplace=True)
-    df_pg = df_pg.replace(r'^\s*$', np.nan, regex=True)
-    df_pg = df_pg.ffill()
-    df_pg = df_pg.bfill()
+    pg1 = sheet.worksheet("Bloomberg")
+    df_pg1 = pd.DataFrame(pg1.get_all_records())
+    df_pg1 = ensure_datetime(df_pg1, 'Date')
+    df_pg1.set_index('Date', inplace=True)
+    df_pg1.fillna(method='ffill',inplace=True)
     
-    return df_pg
+    return df_pg1
 
 df = get_and_prepare_data()
 
