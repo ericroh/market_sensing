@@ -86,7 +86,7 @@ page6 = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "마켓셍싱": [page1,page2,page3,page4,page5],
+        "마켓센싱": [page1,page2,page3,page4,page5],
         "포트폴리오": [page6]
     }
 )
