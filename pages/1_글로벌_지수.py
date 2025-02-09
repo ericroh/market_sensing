@@ -10,11 +10,24 @@ config = {'displayModeBar': False}
 
 #st.title(f"글로벌 주요 지수", anchor=False)
 
+GSHEETS_CREDENTIALS = {
+    "type": str(st.secrets["connections.gsheets"]["type"]),
+    "project_id": str(st.secrets["connections.gsheets"]["project_id"]),
+    "private_key_id": str(st.secrets["connections.gsheets"]["private_key_id"]),
+    "private_key": str(st.secrets["connections.gsheets"]["private_key"]),
+    "client_email": str(st.secrets["connections.gsheets"]["client_email"]),
+    "client_id": str(st.secrets["connections.gsheets"]["client_id"]),
+    "auth_uri": str(st.secrets["connections.gsheets"]["auth_uri"]),
+    "token_uri": str(st.secrets["connections.gsheets"]["token_uri"]),
+    "auth_provider_x509_cert_url": str(st.secrets["connections.gsheets"]["auth_provider_x509_cert_url"]),
+    "client_x509_cert_url": str(st.secrets["connections.gsheets"]["client_x509_cert_url"]),
+}
+
+
 @st.cache_data
 def get_and_prepare_data():
     # Connect to GS
-    GSHEETS_CREDENTIALS = 'market-sensing-449014-a6c257ded130.json'
-    client = gspread.service_account(GSHEETS_CREDENTIALS)
+    client = gspread.service_account_from_dict(GSHEETS_CREDENTIALS)
     sheet = client.open('Dashboard_Marketsensing')
     
     worksheet_list = sheet.worksheets()
